@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact Me📞</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico">
+    </head>
+  <body>
+    <div class="navbar">
+      <img  src="images/home.png"  alt="Feels Like HOME" class="logo" height="100px" width="100px">
+      <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="features.html">Features</a></li>
+          <li><a href="testimonial.html">Testimonials</a></li>
+          <li><a href="login.html">Login</a></li>
+      </ul>
+  </div>
+    <div class="cont">
+        <div class="contactForm">
+            <h1>Contact me for Enquiries</h1>
+            <form action="mailto:snehasinghal025@gmail.com" method="post" enctype="text/plain">
+                <div class="mb-3">
+                  <label for="clientEmail" class="form-label">Name</label>
+                  <input type="name" class="form-control" id="clientEmail" aria-describedby="emailHelp" required>
+                </div>
+                <div class="mb-3">
+                  <label for="clientEmail" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="clientEmail" aria-describedby="emailHelp" required>
+                  <div id="emailHelp" class="form-text">We'll never share your email & phone with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="clientPhone" class="form-label">Phone <br>
+                    <!-- <input type="text" name="country-code" placeholder="country code" value="+91" size="2"> -->
+                    <input type="tel" name="phone" size="25" pattern="[+123][0-9]{4}-[0-9]{6}" placeholder="+91-1234-567890" class="form-control" id="clientPhone" required><!--tel gives an option to write a phn no. with defined pattern--></label>
+                </div>
+                <div class="mb-3">
+                  <label for="clientEmail" class="form-label">Enquiry</label>
+                  <textarea name="yourMessage" cols="20" rows="10"  class="form-control" id="clientEmail" aria-describedby="emailHelp"></textarea>
+                </div>
+                <div class="mb-3" id="form-check">
+                  <input type="checkbox" class="form-check-input" id="isClient">
+                  <label class="form-check-label" for="isClient">I want you to work on a project with me</label>
+                </div>
+                <button type="submit" class="butn butn-sm">Submit</button>
+              </form>
+        </div>
+    </div>
+  </body>
+</html>
